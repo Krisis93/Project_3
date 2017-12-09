@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Soundelicous</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="content">
+        <div id="logo" class="logo">
+            <div class="container">
+                <div class="row">
+                   <div class="col-lg-4 col-md-4"></div>
+                   <div class="col-lg-4 col-md-4"><div class="image">
+                        <a href="#"><img src="images/Logo_Transparent.png"></a>
+                    </div></div>
+                   <div class="col-lg-4 col-md-4"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="login" class="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4"></div>
+                    <div class="col-lg-4 col-md-4" id="back-login">
+                         <form action="login.php" method="POST">
+                           
+                            <div class="form-group">
+                                <input type="text" name="username" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" class="form-control" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-4"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                    <button class="button-izvelne" type="button" data-toggle="modal" data-target="#modal-2">Create account</button>
+                        <div class="modal fade" id="modal-2">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>Create Account</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="register.php" method="POST" id="form1">
+                                           <div class="form-group">
+                                                <input type="text" name="email" class="form-control" placeholder="E-mail">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="text" name="username" class="form-control" placeholder="Username">
+                                           </div>
+                                           <div class="form-group">
+                                                  <input type="password" name="password" class="form-control" placeholder="Password">
+                                           </div>
+                                           <div class="form-group">
+                                                <input type="password" name="password2" class="form-control" placeholder="Repeat Password">
+                                           </div>
+                                           <button class="m-button" id="send" type="submit">Create</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                       
+                                       <button class="m-button" id="dismiss" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                    <button class="button-izvelne" type="button" data-toggle="modal" data-target="#modal-1">Forgot password</button>
+                        <div class="modal fade" id="modal-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>Forgot password</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form form action="" method="post" onsubmit="" id="form2">
+                                            <div class="form-group">
+                                                <input type="email" id="email2" class="form-control" placeholder="Email">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="m-button" id="send2" type="submit">Send</button>
+                                        <button class="m-button"  id="dismiss2" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                    <button class="button-izvelne" type="button" data-toggle="modal" data-target="#modal-3">About</button>
+                        <div class="modal fade" id="modal-3">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2>About</h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium perspiciatis sequi quos rem distinctio cupiditate, impedit pariatur beatae delectus ut animi explicabo reprehenderit porro aspernatur odit est quaerat iste nisi.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="m-button" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/correct.js"></script>
+  </body>
+</html>

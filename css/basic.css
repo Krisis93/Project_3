@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;  
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+p{
+    font-size: 15px;
+    line-height: 21px;
+}
+a{
+    /*text-decoration: none;*/
+    transition: all 500ms ease-in-out;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+.navbar{
+    border-style: none;
+}
+.content{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.loggedcontent{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*--- Backgroundpicture ---*/
+.content{
+    background-image: url(../images/Back2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 8%;
+    padding-bottom: 100px;  
+}
+
+.inner-addon{
+    position:relative;
+}
+.inner-addon .glyphicon{
+    position: absolute;
+    padding: 10px;
+}
+.left-addon .glyphicon  { left:  0px;}
+.left-addon input  { padding-left:  30px; }
+
+
+/*--- Logo ---*/
+.logo{
+    text-align: center;
+}
+.image img{
+    -webkit-transition: all 1s ease;
+    
+}
+.image:hover img{
+    -webkit-transform:scale(1.25);
+    cursor: pointer;
+}
+/*--- Login ---*/
+.login{
+    padding-top: 30px;
+    text-align: center;
+}
+.login input{
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 18px;
+}
+.login form{
+    margin: 0 auto;
+    border-radius: 5px solid #222222;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-footer{
+    text-align: center;
+}
+
+
+.login .btn{
+    width: 100px;
+    margin-top: 10px;
+}
+#back-login{
+    background-color: rgba(52, 73, 94, 0.6);
+    height: 190px;
+    border-radius: 4px;   
+}
+.login i{
+    height: 40px;
+    width: 40px;
+    padding-top: 11px;
+    color: #fff;
+    background-color: aqua;
+}
+
+/*--- Footer ---*/
+.footer{
+    padding-top: 50px;
+    text-align: center
+}
+.button-izvelne{
+    height: 30px;
+    width: 150px;
+    background-color: #F7882F;
+    border: 2px solid #6B7A8F;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.button-izvelne:hover{
+    opacity: 1;
+}
+
+@media(max-width:768px){
+    .content{
+        height: 800px;
+        padding-top: 100px;
+    }
+    .logo img{
+        width: 200px;
+        height: 200px;
+    }
+    .login form{
+        width: 200px;
+    }
+    .footer a{
+        font-size: 15px;
+    }
+    .login form{
+        padding-top: 13px;
+    }
+    .button-izvelne{
+        margin-top: 5px;
+    }
+}

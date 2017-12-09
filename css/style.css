@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'PT Serif', serif;
+    font-family: 'PT Sans', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;  
+}
+html{
+    background: url(../images/LoggedFons.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+p{
+    font-size: 15px;
+    line-height: 21px;
+}
+a{
+    /*text-decoration: none;*/
+    transition: all 500ms ease-in-out;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+.navbar{
+    border-style: none;
+}
+.content{
+    font-family: 'PT Serif', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+.loggedcontent{
+    font-family: 'PT Serif', serif;
+    font-family: 'PT Sans', sans-serif;
+}
+/*--- OPENINGPAGE ---*/
+
+
+.inner-addon{
+    position:relative;
+}
+inner-addon .glyphicon{
+    position: absolute;
+    padding: 10px;
+}
+/*--- Backgroundpicture ---*/
+.content{
+    background-image: url(../images/Back2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 3%;    
+}
+.inner-addon{
+
+}
+.inner-addon .glyphicon{
+    position: absolute;
+    background: transparent;
+    color: #FFF;
+}
+.left-addon .glyphicon  { left:  0px;}
+.left-addon input  { padding-left:  30px; }
+
+/*--- Logo ---*/
+.logo{
+    text-align: center;
+}
+.image img{
+    -webkit-transition: all 1s ease;
+    
+}
+.image:hover img{
+    -webkit-transform:scale(1.25);
+    cursor: pointer;
+}
+/*--- Login ---*/
+.login{
+    padding-top: 30px;
+    text-align: center;
+}
+.login input{
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 18px;
+}
+.login form{
+    margin: 0 auto;
+    border-radius: 5px solid #222222;
+    width: 300px;
+    text-align: center;
+}
+#logd{
+    background-color: #E3A36F;
+
+}
+.modal-footer{
+    text-align: center;
+}
+.button-login{
+    height: 30px;
+    width: 150px;
+    background-color: #F7882F;
+    border: 2px solid #6B7A8F;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.login .btn{
+    width: 100px;
+    margin-top: 10px;
+}
+#back-login{
+    background-color: rgba(194, 177, 164, 0.6);
+    height: 190px;
+    border-radius: 4px;   
+}
+.login i{
+    height: 40px;
+    width: 40px;
+    padding-top: 11px;
+}
+
+/*--- Footer ---*/
+.footer{
+    padding-top: 50px;
+    text-align: center
+}
+.button-izvelne{
+    height: 30px;
+    width: 150px;
+    background-color: #F7882F;
+    border: 2px solid #6B7A8F;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.button-izvelne:hover{
+    opacity: 1;
+}
+
+.m-button{
+    text-align: center;
+    background-color: #3e3e3e;
+    border-color: #fff;
+    border-radius: 50px;
+    height: 30px;
+    width: 20%;
+    color: #fff;
+    opacity: 0.7;
+}
+.m-button:hover{
+    background-color: #fff;
+    border-color: #3e3e3e;
+    color: #3e3e3e;
+}
+
+@media(max-width:768px){
+    .content{
+        height: 100%;
+        padding-top: 5%;
+    }
+    .logo img{
+        width: 200px;
+        height: 200px;
+    }
+    .login form{
+        width: 200px;
+    }
+    .footer a{
+        font-size: 15px;
+    }
+    .login form{
+        padding-top: 13px;
+    }
+    .button-izvelne{
+        margin-top: 5px;
+    }
+    #back-login{
+        width: 100%;
+    }
+}
+
+/*--- END OF OPENINGPAGE ---*/
+
+/*--- LOGGEDINPAGE ---*/
+
+/*--- NAVBAR ---*/
+#nav{
+  height: 100px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .7s;
+}
+
+#nav.shrink{
+    height: 66px;
+    background-color: rgba(220,220,220,0.3);
+    padding-top: 0px;
+    transition: all ease .7s;
+}
+#nav.shrink i{
+    padding-top: 0px;
+    transition: all ease .7s;
+}
+#nav.shrink h2{
+    padding-top: 7px;
+    font-size: 18px;
+    transition: all ease .7s;
+}
+#nav.shrink .bilde{
+    height: 18%;
+    width: 18%;
+    transition: all ease .7s;
+}
+#nav.shrink #userface{
+    padding-top: 0px;
+    width: 17%;
+    height: 17%;
+    transition: all ease .7s;
+}
+#nav.boost #userface, .bilde, h2, i, .hellothere{
+    transition: all ease .7s;
+}
+#nav.shrink .hellothere{
+    margin-top: 20px;
+    font-size: 120%;
+    transition: all ease .7s;
+}
+
+/*---Logo---*/
+.bilde{
+    float: left;
+    margin-right: 10px;
+    clear: both;
+    width: 30%;
+    height: 30%;
+}
+/*---Icons---*/
+.nav i{
+    color: #3e3e3e;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-left: 13px;
+    opacity: 0.7;
+}
+.nav i:hover{
+    opacity: 1;
+}
+#searchy{
+    margin-top: 10px;
+}
+#searchbar{
+    margin-left: 10px;
+    background-color: #3e3e3e;
+    opacity: 0.5;
+    border: #3e3e3e;
+    border-radius: 5px; 
+    color: #fff;
+    font-size: 110%;
+    height: 30px;
+}
+input:focus{
+    outline: none;
+}
+
+.navbar h2{
+    float: right;
+    padding-top: 10px;
+}
+#userface{
+    padding-top: 10px;
+    width: 25%;
+    height: 25%;
+}
+/*---LoggedInFons---*/
+
+.loggedcontent{
+    height: 100%;
+    background: url(../images/LoggedFons.jpg) no-repeat center center fixed; 
+
+    background-size: cover;
+    padding-top: 170px;
+}
+.categories{
+    text-align: center;
+    color: #fff;
+}
+.categories p{
+    padding-bottom: 25px;
+    color: #737373;
+}
+.categories img{
+    margin-top: 20px;
+    width: 250px;
+    height: 220px;
+    transition: .3s;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.7;
+    border: 5px solid #e3e3ee;
+}
+.categories li:hover img{
+    filter: blur(2px) brightness(80%);
+    opacity: 1;
+    border: 5px solid orange;
+}
+.cate-all h2{
+    font-size: 28px;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 40%;
+    opacity: 0;
+    transition: 0.3s;
+}
+.cate-all h2:hover{
+    opacity: 1;
+}
+.hellothere{
+    margin-top: 40px;
+    font-size: 150%;
+    color: #fff;
+}
+
+/*---Footer----*/
+
+#footer2{
+    background-image: url(../images/footer.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    height: 370px;
+}
+#show{
+    height: 40px;
+    width: 40px;
+}
+
+/*---Contacts---*/
+
+.footer2{
+    text-align: center;
+}
+.footer2 h2{
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+.sub{
+    width: 100%;
+    margin-bottom: 10px;
+    width: 250px;
+}
+.footer2 .form-control{
+    border-radius: 0 !important;
+}
+.footer2 span{
+    border-radius: 0 !important;
+}
+.footer2 .btn{
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #6EFF70;
+    color: #fff;
+}
+.footer2 .btn:hover{
+    background-color: #BAFFBB;
+    color: #3e3e3e;
+}
+.footer2 .message{
+    width: 100%;
+}
+
+#player{
+    background-color: aqua;
+}
+
+/*---Social Media---*/
+.footer2 .social{
+    font-size: 60px;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.footer2 .icon{
+    margin-left: 10px;
+}
+
+@media(max-width:768px){
+    .loggedcontent p{
+        padding: 10px 10px;
+    }
+    #footer2{
+        background-image: url(../images/footer.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 380px;
+        display: none;
+    }
+    #nav{
+    height: 100px;
+    }
+    .navbar h2{
+        font-size: 15px;
+    }
+    img.bilde{
+        top: 10%;
+        position: absolute;
+        height: 50%;
+        width: 15%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #nav.shrink .bilde{
+        height: 60%;
+        width: 15%;
+        transition: all ease .7s;
+    }
+    .navbar-toggle{
+        margin-top:25px;
+        margin-right: 25px;
+        background-color: rgba(220,220,220,0.3);
+    }
+    #userface{
+        padding-top: 0px;
+        width: 20%;
+        height: 20%;
+        margin-top: 0px;
+    }
+    #nav.shrink{
+        height: 75px;
+    }
+    .hellothere{
+        visibility: hidden;
+    }
+    .loggedcontent{
+        padding-top: 170px;
+        
+    }
+    .navbar-collapse{
+        background-color: rgba(220,220,220,0.3);
+        text-align: left;
+    }
+    .navbar-collapse #searchy{
+        margin-left: 10px;
+    }
+    #selektors{
+        width: 100px;
+    }
+    .cate-all h2{
+        left: 30%;
+    }
+    
+}
+
+/*---Mūzikas sadaļa---*/
+
+.player{
+    position: relative;
+    left: 15%; 
+    border-radius: 10px;
+    width: 70%;
+    background: rgba(255,255,255,0.4);
+}
+.player h2{
+    padding-top: 10px;
+    font-size: 21px;
+    color: #FFF6F0; 
+}
+.playz{
+    position: relative;
+    left: 25%;
+    background-color: #ffffff;
+    width: 50%;
+    height: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.playz #playeris{
+    width: 100%;
+}
+.buty #player-button{
+    width: 30%;
+    height: 35px;
+    background-color: #6EFF70;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.buty #player-button:hover{
+    background-color: #BAFFBB;
+    color: #3e3e3e;
+}
+
+/*---UPLOAD MUSIC sadaļa---*/
+#uploadforma{
+    background: rgba(255,255,255,0.4);;
+    width: 50%;
+    height: 150px;
+    left: 25%;
+    position: relative;
+    border: 10px;
+    border-radius: 50%;
+}
+#selektors{
+    width: 200px;
+    color: #3e3e3e;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#selektors option{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#tohide{
+    position: relative;
+    padding-top: 20px;
+    left: 25%;
+}
+#toshow{
+    width: 30%;
+    height: 35px;
+    background-color: #79BDFF;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+#toshow:hover{
+    background-color: #6EFF70;
+    color: #fff;
+    cursor: pointer;
+}
